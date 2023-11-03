@@ -1,14 +1,8 @@
-import React, { useState } from "react";
-import ArrayDestructure from "../assets/projects/arrayDestruct.jpg";
-import InstallNode from "../assets/projects/installNode.jpg";
-import PassGen from "../assets/projects/PassGen.jpg";
-import Ecommerce from '../assets/projects/e-commerce.png';
-import todoApp from '../assets/projects/todo-app.png';
-import crypto from '../assets/projects/crypto-app.png';
-import ReactSmooth from "../assets/projects/reactSmooth.jpg";
-import ReactWeather from "../assets/projects/reactWeather.jpg";
-import UseState from "../assets/projects/usestate.jpg";
-
+import React from "react";
+import PassGen from "../assets/projects/passGen.png";
+import Ecommerce from "../assets/projects/e-commerce.png";
+import todoApp from "../assets/projects/todo-app.png";
+import crypto from "../assets/projects/crypto-app.png";
 
 const Projects = () => {
   const projects = [
@@ -50,7 +44,7 @@ const Projects = () => {
           {projects.map(({ id, src , demo, code}) => (
             <div key={id} className=" shadow-md shadow-gray-500 rounded-lg">
               <img
-                className=" hover:scale-105 duration-300 rounded-md"
+                className=" h-60 hover:scale-105 duration-300 rounded-md"
                 src={src}
                 alt="project-logo"
               />
